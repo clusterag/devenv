@@ -13,7 +13,7 @@
 
 <?php
 $hash = $_POST["hash"];
-print($hash)
+print($hash);
 print(password_hash($hash));
 
 
