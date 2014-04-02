@@ -13,8 +13,7 @@
 
 <?php
 $hash = $_POST["hash"];
-print($hash);
-print(password_hash($hash));
+print(password_hash($hash, PASSWORD_BCRYPT));
 
 
 ?>
