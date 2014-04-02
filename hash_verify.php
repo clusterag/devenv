@@ -1,8 +1,10 @@
+<p> simple way to check if the bcrypt password-hash was generated successfully: </p>
+
 <form name="hash_verify" id="hash_verify" action="hash_verify.php" method="post" >
 
 <div id="password">
-	<p>To be hashed:</p>
-	<input type="text" name="password" value="" >
+	<p>Password:</p>
+	<input type="password" name="password" value="" >
 </div>
 
 <div id="hash">
@@ -11,17 +13,17 @@
 </div>
 
 <div id="submit">
-	<input type="submit" value="generate hash">
+	<input type="submit" value="check hash">
 </div>
 
 </form>
 
 <?php
 if (password_verify($_POST["password"], $_POST["hash"])) {
-	print("True");
+	print("<p>Password and hash correspond!</p>");
 }
 else {
-	print("False");
+	print("<p>Password and hash do not correspond, check both!</p>");
 }
 
 
