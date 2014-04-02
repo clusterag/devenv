@@ -12,8 +12,9 @@
 </form>
 
 <?php
-$hash = $_POST["hash"];
-print(password_hash($hash, PASSWORD_BCRYPT));
+$hash = password_hash($_POST["hash"], PASSWORD_BCRYPT);
+print($hash);
+$hash = "";
 
 
 ?>
