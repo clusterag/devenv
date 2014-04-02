@@ -1,4 +1,4 @@
-<form name="hash" id="hash" action="hash.php" method="post" >
+<form name="hash_verify" id="hash_verify" action="hash_verify.php" method="post" >
 
 <div id="password">
 	<p>To be hashed:</p>
