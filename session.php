@@ -10,15 +10,13 @@
 </div>
 
 </form>
+<p>current:</p>
 <?php
 
 session_start();
-if (isset($_SESSION["user"])){
-	echo($_SESSION["user"]);
-}
-else {
-	$_SESSION["user"] = $_POST["user"];
-}
+echo($_SESSION["user"]);
+$_SESSION["user"] = $_POST["user"];
+
 
 
 ?>
