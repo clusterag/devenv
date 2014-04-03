@@ -1,4 +1,4 @@
-<form name="session" id="session" action="session.php" method="post" >
+<form name="session" id="session" action="session_set.php" method="post" >
 
 <div id="user">
 	<p>User:</p>
@@ -10,7 +10,6 @@
 </div>
 
 </form>
-<p>current:</p>
 <?php
 
 session_start();
