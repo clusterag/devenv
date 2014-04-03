@@ -12,7 +12,7 @@
 </form>
 <?php
 
-session_cache_expire(5);
+session_set_cookie_params(500);
 session_start();
 $_SESSION["user"] = $_POST["user"];
 
