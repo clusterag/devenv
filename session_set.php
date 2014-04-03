@@ -12,6 +12,7 @@
 </form>
 <?php
 
+session_cache_expire(5);
 session_start();
 $_SESSION["user"] = $_POST["user"];
 
