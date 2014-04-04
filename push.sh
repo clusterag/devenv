@@ -1,3 +1,4 @@
 git add --all
-git commit -m $1
+var = $@
+git commit -m "var"
 git push
